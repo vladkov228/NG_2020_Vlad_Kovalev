@@ -31,6 +31,10 @@ int main()
         {
             cout << "infinity";
         }
+        else 
+        {
+            cout << "result: " << chislo1 / chislo2;
+        }
         cout << "result: " << chislo1 / chislo2;
     }
     else
