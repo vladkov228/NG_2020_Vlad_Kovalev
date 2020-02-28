@@ -13,21 +13,27 @@ int main()
     int chislo3;
     cout << "enter the third number : ";
     cin >> chislo3;
-    if (chislo3==1)
-        {
-            cout << "result" << chislo1 + chislo2;
-        }
-    if (chislo3==2)
-        {
-            cout << "result" << chislo1 - chislo2;
-        }
-    if (chislo3==3)
-        {
-            cout << "result" << chislo1*chislo2;
-        }
-    if (chislo3==4)
-        {
-        cout << "result" << chislo1/chislo2;
-        }
+    if (chislo3 == 1)
+    {
+        cout << "result" << chislo1 + chislo2;
+    }
+    if (chislo3 == 2)
+    {
+        cout << "result" << chislo1 - chislo2;
+    }
+    if (chislo3 == 3)
+    {
+        cout << "result" << chislo1 * chislo2;
+    }
+    if (chislo3 == 4)
+    {
+        cout << "result" << chislo1 / chislo2;
+    }
+    if (chislo3 >= 5)
+    {
+        cout << "error, you entered an invalid number";
+    }
 }
 
+
+   

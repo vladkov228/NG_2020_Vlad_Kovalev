@@ -10,5 +10,5 @@ int main()
     int number2;
     cout << "enter the second number: ";
     cin  >> number2;
-    cout << "result: "number1 + number2;
+    cout << "result: " << number1 + number2;
 }
