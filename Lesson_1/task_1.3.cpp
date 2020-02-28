@@ -38,4 +38,4 @@ int main()
     {
         cout << rabochiy3 - rabochiy1;
     }
-    }
+}

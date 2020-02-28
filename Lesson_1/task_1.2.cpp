@@ -21,6 +21,6 @@ int main()
     {
      cout << "no";
     }
-    }
+}
 
 

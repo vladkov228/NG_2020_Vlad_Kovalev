@@ -15,19 +15,19 @@ int main()
     cin >> chislo3;
     if (chislo3 == 1)
     {
-        cout << "result" << chislo1 + chislo2;
+        cout << "result: " << chislo1 + chislo2;
     }
     if (chislo3 == 2)
     {
-        cout << "result" << chislo1 - chislo2;
+        cout << "result: " << chislo1 - chislo2;
     }
     if (chislo3 == 3)
     {
-        cout << "result" << chislo1 * chislo2;
+        cout << "result: " << chislo1 * chislo2;
     }
     if (chislo3 == 4)
     {
-        cout << "result" << chislo1 / chislo2;
+        cout << "result: " << chislo1 / chislo2;
     }
     if (chislo3 >= 5)
     {
