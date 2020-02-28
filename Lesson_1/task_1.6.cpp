@@ -4,57 +4,31 @@ using namespace std;
 
 int main()
 {
-    int a,b,c,d;
-    cout<<"vvedite chislo 1: ";
-    cin>>a;
-    cout<<"vvedite chislo 2: ";
-    cin>>b;
-    cout<<"vvedite chislo 3: ";
-    cin>>c;
-    cout<<"press 1 chtob splusovat"<<endl;
-    cout<<"press 2 chtob otnat"<<endl;
-    cout<<"press 3 chtob umnozhyt"<<endl;
-    cout<<"press 3 chtob podelit"<<endl;
-    cout<<"vvedite deystvie: ";
-    cin>>d;
-    if(d==1)
+    int a, b, c;
+    cout << "enter the first number: ";
+    cin >> a;
+    cout << "enter the second number: ";
+    cin >> b;
+    cout << "enter the third number: ";
+    cin >> c;
+    if (ab==c or ac==b or b*c==a)
     {
-        if(a+b==c or a+c==b or b+c==a)
-        {
-            cout<<"Yes";
-        }else
-        {
-            cout<<"No";
-        }
+        cout << "Yes";
     }
-    if(d==2)
+    else if (a+b==c or a+c==b or b+c==a)
     {
-        if(a-b==c or a-c==b or b-c==a)
-        {
-            cout<<"Yes";
-        }else
-        {
-            cout<<"No";
-        }
+        cout << "Yes";
     }
-    if(d==3)
+    else if (a-b==c or a-c==b or b-c==a)
     {
-        if(a*b==c or a*c==b or b*c==a)
-        {
-            cout<<"Yes";
-        }else
-        {
-            cout<<"No";
-        }
+        cout << "Yes";
     }
-    if(d==4)
+    else if (a/b==c or a/c==b or b/c==a)
     {
-        if(a/b==c or a/c==b or b/c==a)
-        {
-            cout<<"Yes";
-        }else
-        {
-            cout<<"No";
-        }
+        cout << "Yes";
+    }
+    else
+    {
+        cout << "No";
     }
 }

@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-    int chislo1;
-    cout << "vvedite chislo: ";
-    cin >> chislo1;
-    int chislo2;
-    cout << "vvedite chislo: ";
-    cin  >> chislo2;
-    cout << chislo1 + chislo2;
+    int number1;
+    cout << "enter the first number: ";
+    cin >> number1;
+    int number2;
+    cout << "enter the second number: ";
+    cin  >> number2;
+    cout << "result: "number1 + number2;
 }

@@ -5,13 +5,13 @@ using namespace std;
 int main()
 {
     int n;
-    cout << "vvedite kolichestvo shushek: ";
+    cout << "enter the number of cones: ";
     cin >> n;
     int m;
-    cout << "vvedite kolichestvo oreshkov: ";
+    cout << "enter the number of nuts: ";
     cin >> m;
     int k;
-    cout << "vvedite kolichestvo oreshkov: ";
+    cout << "enter the number of nuts she needs : ";
     cin >> k;
     if (n*m>=k)
     {
