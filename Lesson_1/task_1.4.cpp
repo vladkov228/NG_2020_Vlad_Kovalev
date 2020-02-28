@@ -27,17 +27,18 @@ int main()
     }
     if (chislo3 == 4)
     {
-        if (chislo2 == 0) 
+        if (chislo2 == 0)
         {
             cout << "infinity";
+            return 0;
         }
-        else 
+        else
         {
             cout << "result: " << chislo1 / chislo2;
         }
-        cout << "result: " << chislo1 / chislo2;
+
     }
-    else
+    if (chislo3 >= 5 and chislo3 <= 0)
     {
         cout << "error, you entered an invalid number";
     }
