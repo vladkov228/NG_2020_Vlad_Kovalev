@@ -4,20 +4,20 @@ using namespace std;
 
 int main()
 {
-    int a = 0;
+    int sizeOfTree = 0;
 
     cout << "enter size of your tree: ";
-    cin >> a;
+    cin >> sizeOfTree;
 
-    for (int i = 0; i < a; i++)
+    for (int i = 0; i < sizeOfTree; i++)
     {
 
-        for (int j = 1; j < a - i; j++)
+        for (int j = 1; j < sizeOfTree - i; j++)
         {
             cout << " " ;
         }
 
-        for (int j = a - 2 * i; j <= a; j++)
+        for (int j = sizeOfTree - 2 * i; j <= sizeOfTree; j++)
         {
             cout << "*";
         }
@@ -27,12 +27,12 @@ int main()
 
     int i = 1;
 
-    while(i <= a)
+    while(i <= sizeOfTree)
     {
 
         cout << ' ' ;
 
-        if (i == a-1)
+        if (i == sizeOfTree -1)
         {
             cout << '*';
         }

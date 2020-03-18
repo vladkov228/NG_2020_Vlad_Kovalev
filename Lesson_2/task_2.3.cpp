@@ -4,23 +4,23 @@ using namespace std;
 
 int main()
     {
-        int odin,dva, tri;
+        int a,goriz;
 
-        odin=0;
+        a=0;
         int i=1;
 
         cout << "enter the size of square: ";
-        cin >> dva;
+        cin >> goriz;
         cout << endl;
 
-        while ( odin < dva )
+        while ( a < goriz)
         {
             cout << "* ";
-            odin++;
-            if ( odin == dva and i < dva)
+            a++;
+            if ( a == goriz and i < goriz)
             {
                 cout << endl;
-                odin = 0;
+                a = 0;
                 i++;
             }
         }
