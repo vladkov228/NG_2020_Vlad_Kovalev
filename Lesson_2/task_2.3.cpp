@@ -3,26 +3,25 @@
 using namespace std;
 
 int main()
+{
+    int goriz = 0;
+    int sizeOfSquare;
+    int vert = 1;
+
+    cout << "enter the size of square: ";
+    cin >> sizeOfSquare;
+    cout << endl;
+
+    while (goriz < sizeOfSquare)
     {
-        int a,goriz;
-
-        a=0;
-        int i=1;
-
-        cout << "enter the size of square: ";
-        cin >> goriz;
-        cout << endl;
-
-        while ( a < goriz)
+        cout << "* ";
+        goriz++;
+        if (goriz == sizeOfSquare and vert < sizeOfSquare)
         {
-            cout << "* ";
-            a++;
-            if ( a == goriz and i < goriz)
-            {
-                cout << endl;
-                a = 0;
-                i++;
-            }
+            cout << endl;
+            goriz = 0;
+            vert++;
         }
-        cout << endl;
     }
+    cout << endl;
+}
