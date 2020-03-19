@@ -4,24 +4,24 @@ using namespace std;
 
 int main()
 {
-   int a[10];
-   int x=0;
-   for (int i=0; i<10; i++)
-   {
-       cout << "Enter the school number: ";
-       cin >> a[i];
-   }
-   int b;
-   cout << "Enter your school number: ";
-   cin >> b;
-   for (int j=0; j<10; j++)
-   {
-      if (a[j] == b)
+    int numberOfSchool[10];
+    bool isFound = 0;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "Enter the school number: ";
+        cin >> numberOfSchool[i];
+    }
+    int yourSchool;
+    cout << "Enter your school number: ";
+    cin >> yourSchool;
+    for (int j = 0; j < 10; j++)
+    {
+        if (numberOfSchool[j] == yourSchool)
         {
-         x++;
+            isFound = true;
         }
-   }
-   if (x>=1)
+    }
+    if (isFound == true)
     {
         cout << "I know this school";
     }
