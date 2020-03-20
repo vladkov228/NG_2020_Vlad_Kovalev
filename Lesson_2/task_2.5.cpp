@@ -9,15 +9,15 @@ int main()
     cout << "enter size of your tree: ";
     cin >> sizeOfTree;
 
-    for (int i = 0; i < sizeOfTree; i++)
+    for (int counter = 0; counter < sizeOfTree; counter++)
     {
 
-        for (int j = 1; j < sizeOfTree - i; j++)
+        for (int counter1 = 1; counter1 < sizeOfTree - counter; counter1++)
         {
             cout << " " ;
         }
 
-        for (int j = sizeOfTree - 2 * i; j <= sizeOfTree; j++)
+        for (int counter1 = sizeOfTree - 2 * counter; counter1 <= sizeOfTree; counter1++)
         {
             cout << "*";
         }
@@ -25,18 +25,18 @@ int main()
         cout << endl;
     }
 
-    int i = 1;
+    int counter = 1;
 
-    while(i <= sizeOfTree)
+    while(counter <= sizeOfTree)
     {
 
         cout << ' ' ;
 
-        if (i == sizeOfTree -1)
+        if (counter == sizeOfTree -1)
         {
             cout << '*';
         }
 
-        i++;
+        counter++;
     }
 }
