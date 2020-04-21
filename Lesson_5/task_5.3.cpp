@@ -3,6 +3,14 @@
 
 using namespace std;
 
+int numb(int value)
+{
+    int val;
+    cout << "Enter " << value << " number: ";
+    cin >> val;
+    return val;
+}
+
 int sum(int numb1, int numb2)
 {
     return numb1 + numb2;
@@ -10,12 +18,12 @@ int sum(int numb1, int numb2)
 
 int minu(int numb1, int numb2)
 {
-    return numb1 - numb2;
+    return numb2 - numb1;
 }
 
 float div(int numb1, int numb2)
 {
-    return (float)numb1 / (float)numb2;
+    return (float)numb2 / (float)numb1;
 }
 
 int mul(int numb1, int numb2)
@@ -29,43 +37,49 @@ float cor(float numb1)
     return sqrt(numb1);
 }
 
-int step(int numb1, int numb2)
+int power(int numb1, int numb2)
 {
-    int res = numb1;
-    for(int index=1;index < numb2; index++)
-    {
-        res *= numb2;
-    }
+    int res = pow(numb2,numb1);
+    cout  << endl;
     return res;
+
 }
 
+int choices(int numb1,int numb2,int choice)
+{
+    if (choice == 5 )
+    {
+        numb1=numb(1) ;
+    }
+    else
+    {
+        numb1=numb(1);
+        numb2=numb(2);
+    }
+}
+int switches(int numb1,int numb2,int choice)
+{
+
+    switch (choice)
+    {
+        case 1: cout << "result is : " << sum(numb(2), numb(1))<< endl; break;
+        case 2: cout << "result is : " << minu(numb(2), numb(1))<< endl; break;
+        case 3: cout << "result is : " << mul(numb(2), numb(1))<< endl; break;
+        case 4: cout << "result is : " << div(numb(2), numb(1))<< endl; break;
+        case 5: cout << "result is : " << cor((float)numb(1))<< endl; break;
+        case 6: cout << "result is : " << power(numb(2), numb(1))<< endl; break;
+        default: cout << "Error" << endl;
+    }
+}
 int main()
 {
-   int numb1, numb2, choice;
-   cout << "Enter choice (1 +, 2 -, 3 *, 4 /, 5 square, 6 power): ";
-   cin >> choice;
-   if (choice == 5 )
-   {
-        cout << "Enter number: ";
-        cin >> numb1;
-   }
-   else
-   {
-        cout << "Enter 1 number: ";
-        cin >> numb1;
-        cout << "Enter 2 number: ";
-        cin >> numb2;
-   }
-
-
-   switch (choice)
-   {
-        case 1: cout << "result is : " << sum(numb1, numb2); break;
-        case 2: cout << "result is : " << minu(numb1, numb2); break;
-        case 3: cout << "result is : " << mul(numb1, numb2); break;
-        case 4: cout << "result is : " << div(numb1, numb2); break;
-        case 5: cout << "result is : " << cor((float)numb1); break;
-        case 6: cout << "result is : " << step(numb1, numb2); break;
-
+    while(1)
+    {
+        int numb1, numb2, choice;
+        cout << "Enter choice (1 +, 2 -, 3 *, 4 /, 5 square, 6 power): ";
+        cin >> choice;
+        choices( numb1, numb2, choice);
+        switches( numb1, numb2, choice);
    }
 }
+
