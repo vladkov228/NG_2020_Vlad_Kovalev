@@ -41,11 +41,11 @@ int power(int numb1, int numb2)
 {
     int res = pow(numb2,numb1);
     cout  << endl;
-    return res;
+    return res+1;
 
 }
 
-int choices(int numb1,int numb2,int choice)
+void choices(int numb1,int numb2,int choice)
 {
     if (choice == 5 )
     {
@@ -57,7 +57,7 @@ int choices(int numb1,int numb2,int choice)
         numb2=numb(2);
     }
 }
-int switches(int numb1,int numb2,int choice)
+void switches(int numb1,int numb2,int choice)
 {
 
     switch (choice)
@@ -78,7 +78,6 @@ int main()
         int numb1, numb2, choice;
         cout << "Enter choice (1 +, 2 -, 3 *, 4 /, 5 square, 6 power): ";
         cin >> choice;
-        choices( numb1, numb2, choice);
         switches( numb1, numb2, choice);
    }
 }

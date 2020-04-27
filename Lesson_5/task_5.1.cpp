@@ -5,7 +5,8 @@ void func(int arr[],int siz, int num)
 {
     for (int index=0; index < siz; index++)
     {
-        cout << arr[index] * num << endl;
+        arr[index] *= num;
+        cout << arr[index] << endl;
     }
 }
 
