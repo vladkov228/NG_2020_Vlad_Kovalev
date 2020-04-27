@@ -13,7 +13,7 @@ int main()
     while (predl[word]!=NULL)
     {
         if ((predl[word]>='a' and predl[word]<='z') or (predl[word]>='A' and predl[word]<='Z'))
-            a++;
+            lg++;
         else {
             if (lg > longWord)
             {
