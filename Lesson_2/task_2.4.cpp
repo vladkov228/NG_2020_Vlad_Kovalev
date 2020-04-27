@@ -29,8 +29,8 @@ int main()
 	{
 		while (counterOutput < counter)
 		{
-		cout << "*";
-		counterOutput++;
+			cout << "*";
+			counterOutput++;
 		}
 		counterOutput =0;
 		counter--;
