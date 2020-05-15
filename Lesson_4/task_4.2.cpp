@@ -10,7 +10,7 @@ int main()
     cout << "Enter your sentence: ";
     cin.getline(predl,100);
 
-    while (predl[word]!=NULL)
+    while (predl[word]!=0)
     {
         if ((predl[word]>='a' and predl[word]<='z') or (predl[word]>='A' and predl[word]<='Z'))
             lg++;
@@ -30,7 +30,6 @@ int main()
                 longWord = lg;
                 index = word -longWord;
             }
-            lg =0;
             lg =0;
         }
         word++;
